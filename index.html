@@ -1,5 +1,26 @@
 <!DOCTYPE html>
 <title>1412161-Week7</title>
+
+<script>
+    function append() {
+        var vid = document.getElementById('vid');
+        var text = document.getElementById('videoLink');
+
+        vid.src = text.value;
+    }
+</script>
+
+<a id="link">Demo link: demo.mp4</a>
+
+<div class="col-sm-6">
+    Input any video link then press Enter
+</div>
+
+<div class="col-sm-6">
+    <input type="text" name="videoLink" id="videoLink" class="form-control" onchange="append();">
+</div>
+
+
 <script src="blur.js"></script>
 <video id="vid" src="demo.mp4" autoplay controls loop></video>
 <script>
